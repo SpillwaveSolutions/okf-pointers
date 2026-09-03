@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "plugin": "okf-pointers",
+  "types": [
+    {
+      "type": "pointer.link",
+      "folder": "okf/pointers",
+      "schema": "Link.schema.json",
+      "description": "Git-native join. Sibling of TypedEdge. Field: link_type."
+    }
+  ],
+  "taxonomy": "taxonomy.json"
+}

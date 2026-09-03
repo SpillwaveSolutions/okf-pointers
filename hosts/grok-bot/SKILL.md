@@ -9,6 +9,6 @@ Read docs/ONBOARDING.md first, then follow docs/GROK_BOT.md.
 
 1. Identity: `grok-bot/okf-pointers`
 2. Open an isolation session before writes (second-brain-core `scripts/brain_session.py open`) unless the human already pointed `SECOND_BRAIN_ROOT` at a session worktree.
-3. Write owned types only (`pointer.link`) via this pack's scripts + `--author`. §2.3 is resolved: Link is a sibling of TypedEdge; `link_type` stays `link_type`. Do not modify `second-brain-core`. Schema must land before writes succeed.
+3. Write owned types only (`pointer.link`) via this pack's scripts + `--author`. Link is a sibling of TypedEdge; `link_type` stays `link_type`. Do not modify `second-brain-core`. One file, two ends, inverse required.
 4. Close the session to PR. Report path + SHA.
 5. Never document a private remote. Never write raw Markdown into the tree.

@@ -1,13 +1,13 @@
 {
   "name": "okf-pointers-marketplace",
   "description": "Optional native marketplace metadata. Grok Build already loads Claude plugins with zero config.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "plugins": [
     {
       "name": "okf-pointers",
       "source": ".",
       "description": "Git-native join table linking any OKF noun to any other, including temporal nodes. Not a search index.",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "compatibility": {
         "claude_plugin": true,
         "zero_config": true

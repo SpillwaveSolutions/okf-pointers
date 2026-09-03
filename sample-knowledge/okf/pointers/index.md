@@ -5,4 +5,4 @@ title: Pointers
 
 # Pointers
 
-Empty on purpose. Schema blocked on okf-plugin#73 §2.3.
+Git-native join table for the Northstar / Lumenfield fiction bundle. One noun: the Link. Sibling of TypedEdge.

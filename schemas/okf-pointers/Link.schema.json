@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "Link.schema.json",
+  "title": "pointer.link",
+  "description": "Git-native join. Sibling of TypedEdge, not a subtype. Field name is link_type, not rel. One file, exactly two ends. Destination may be unresolved at write time. Links do not record the taxonomy version they were written against.",
+  "type": "object",
+  "required": [
+    "type",
+    "title",
+    "source",
+    "source_type",
+    "destination",
+    "destination_type",
+    "link_type"
+  ],
+  "properties": {
+    "type": {
+      "const": "pointer.link"
+    },
+    "title": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the source noun. Not mutated."
+    },
+    "source_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "destination": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Identifier of the destination noun. A list here is several Links and fails validation. May not resolve locally."
+    },
+    "destination_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "link_type": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Value from the Pointers taxonomy. Not a TypedEdge rel. Unknown values fail closed. Every type declares an inverse."
+    },
+    "author": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "not": {
+    "anyOf": [
+      { "required": ["rel"] },
+      { "required": ["destinations"] },
+      { "required": ["links"] }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "okf.pointers.taxonomy/v1",
+  "version": "1.0.0",
+  "plugin": "okf-pointers",
+  "policy": {
+    "additive": "minor",
+    "rename_or_remove": "major",
+    "links_record_version": false
+  },
+  "description": "Closed link_type taxonomy. Additive changes are minor bumps; renames and removals are major. Links do not record the version they were written against. Every type declares an inverse; a type with no inverse is a validation failure. Reverse traversal returns the inverse name.",
+  "inverses": {
+    "contains": "contained_by",
+    "contained_by": "contains",
+    "started_in": "start_of",
+    "start_of": "started_in",
+    "ended_in": "end_of",
+    "end_of": "ended_in",
+    "precedes": "follows",
+    "follows": "precedes",
+    "scheduled_for": "scheduled",
+    "scheduled": "scheduled_for",
+    "references": "referenced_by",
+    "referenced_by": "references"
+  }
+}
