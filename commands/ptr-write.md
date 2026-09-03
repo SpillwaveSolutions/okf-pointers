@@ -1,1 +1,1 @@
-Refuses to write pointer.link until §2.3 is decided. See skills/ptr-write/SKILL.md.
+Write a `pointer.link`. §2.3 is resolved (sibling of TypedEdge; `link_type` stays `link_type`). The helper still refuses until `Link.schema.json` lands. See skills/ptr-write/SKILL.md and [okf-plugin#73](https://github.com/SpillwaveSolutions/okf-plugin/issues/73).

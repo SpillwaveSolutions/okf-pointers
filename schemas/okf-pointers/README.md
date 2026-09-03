@@ -1,7 +1,9 @@
-# Schemas — blocked
+# Schemas — unblocked
 
-`Link.schema.json` is **not** in this tree.
+`Link.schema.json` is **not yet** in this tree. §2.3 is resolved: write it as a sibling of `TypedEdge`, not a subtype.
 
-See [okf-plugin#73](https://github.com/SpillwaveSolutions/okf-plugin/issues/73) §2.3 and the analysis comment. Until a human picks option 1 or 2, `scripts/ptr_common.py write` refuses `pointer.link`.
+- Field name is `link_type`, not `rel`.
+- Do not modify `second-brain-core` or contribute values to its `rel` vocabulary.
+- `okf-plugin`'s graph engine must traverse both `type: pointer.link` and `TypedEdge`.
 
-Do not invent `rel` values in the meantime.
+See [okf-plugin#73](https://github.com/SpillwaveSolutions/okf-plugin/issues/73). `scripts/ptr_common.py write` still refuses until the schema lands.
