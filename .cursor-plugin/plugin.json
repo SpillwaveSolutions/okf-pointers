@@ -1,0 +1,23 @@
+{
+  "name": "okf-pointers",
+  "version": "0.1.0",
+  "description": "Git-native join table linking any OKF noun to any other, including temporal nodes. Not a search index.",
+  "author": {
+    "name": "Rick Hightower",
+    "url": "https://github.com/RichardHightower"
+  },
+  "homepage": "https://github.com/SpillwaveSolutions/okf-pointers",
+  "repository": "https://github.com/SpillwaveSolutions/okf-pointers",
+  "license": "MIT",
+  "keywords": [
+    "okf",
+    "second-brain",
+    "agent-plugins",
+    "claude-code",
+    "grok-build",
+    "codex",
+    "deep-agents",
+    "cursor",
+    "wiki-ticket-sdd"
+  ]
+}

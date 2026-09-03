@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+node_modules/
+*.egg-info/
+.okf/.index/
+knowledge/.index/
+.pytest_cache/
+.brain-sessions/
+.brain-worktrees/
+.brain-session.json
+replica.manifest.json
